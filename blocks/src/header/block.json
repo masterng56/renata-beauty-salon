@@ -5,7 +5,6 @@
 	"version": "0.1.0",
 	"title": "header-masterng",
 	"category": "text",
-	"icon": "smiley",
 	"description": "Хедер для сайта салона красоты",
 	"example": {},
 	"supports": {

@@ -4,7 +4,7 @@ export default function Save({ attributes }) {
 	const { slides } = attributes;
 
 	return (
-		<div {...useBlockProps.save()} className="shadow-two">
+		<div {...useBlockProps.save()} >
 			<div className="container">
 				<div className="reviews text-center">
 					<h2>Отзывы клиентов</h2>

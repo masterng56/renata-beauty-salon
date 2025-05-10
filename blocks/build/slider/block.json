@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "title": "Слайдер Отзывов",
   "category": "text",
-  "icon": "calendar-alt",
   "description": "Слайдер отзывов клиентов.",
   "example": {},
   "supports": {

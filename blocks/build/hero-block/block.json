@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "title": "Hero block",
   "category": "text",
-  "icon": "smiley",
   "description": "Хироу блок",
   "example": {},
   "supports": {

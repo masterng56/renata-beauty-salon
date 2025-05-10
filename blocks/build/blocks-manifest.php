@@ -8,7 +8,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Кнопка записи',
 		'category' => 'text',
-		'icon' => 'calendar-alt',
 		'description' => 'Кнопка для записи на прием',
 		'example' => array(
 			
@@ -38,7 +37,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'header-masterng',
 		'category' => 'text',
-		'icon' => 'smiley',
 		'description' => 'Хедер для сайта салона красоты',
 		'example' => array(
 			
@@ -71,7 +69,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Hero block',
 		'category' => 'text',
-		'icon' => 'smiley',
 		'description' => 'Хироу блок',
 		'example' => array(
 			
@@ -132,7 +129,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Внутренние стили',
 		'category' => 'text',
-		'icon' => 'calendar-alt',
 		'description' => 'Как использовать внутренние стили',
 		'example' => array(
 			
@@ -162,7 +158,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Masters',
 		'category' => 'widgets',
-		'icon' => 'smiley',
 		'description' => 'Блок для сайта салона красоты который выводит мастеров',
 		'example' => array(
 			
@@ -183,7 +178,6 @@ return array(
 		'version' => '0.1.0',
 		'title' => 'Слайдер Отзывов',
 		'category' => 'text',
-		'icon' => 'calendar-alt',
 		'description' => 'Слайдер отзывов клиентов.',
 		'example' => array(
 			

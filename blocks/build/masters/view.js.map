@@ -1,0 +1,1 @@
+{"version":3,"file":"masters/view.js","mappings":";;;;AAAAA,OAAO,CAACC,GAAG,CAAC,wBAAwB,CAAC,C","sources":["webpack://masters/./src/masters/view.js"],"sourcesContent":["console.log('masterng-masters block');\n\n"],"names":["console","log"],"sourceRoot":""}

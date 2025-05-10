@@ -1,0 +1,344 @@
+/* gallery */
+
+ ::selection {
+    color: #fff;
+    background: #FF7777;
+}
+
+.gallery-body {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-body:first-child .gallery {
+    flex-direction: column;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 368px;
+    width: calc(100%/3);
+}
+
+.gallery .image {
+    padding: 6px;
+    width: 50%;
+}
+
+.gallery .image span {
+    display: flex;
+    height: 172px;
+    overflow: hidden;
+    margin-right: 0;
+    padding-right: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.gallery .image span img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+.gallery .image:hover img {
+    transform: scale(1.1);
+}
+
+.gallery.one-img .image span {
+    height: 70%;
+}
+
+.gallery.one-img .image span {
+    width: 208%;
+}
+
+.gallery.one-img .image span img {
+    max-height: 425px;
+    width: 100%;
+}
+
+.gallery.three-img .image:nth-child(3) span {
+    height: 356px;
+}
+
+.gallery.two-img .image span {
+    height: 100%;
+}
+
+.gallery.two-img .image {
+    width: 50%;
+    height: 100%;
+}
+
+.gallery.two-img .image span img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.preview-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    max-width: 500px;
+    width: 100%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.preview-box.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+}
+
+.preview-box .details {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 10px;
+    justify-content: space-between;
+}
+
+.preview-box .details .title {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.details .title p {
+    margin: 0 5px;
+}
+
+.details .title p.current-img {
+    font-weight: 500;
+}
+
+.details .icon {
+    color: #FF7777;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.preview-box .image-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.image-box .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.slide.prev {
+    left: 0px;
+}
+
+.slide.next {
+    right: 0px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+}
+
+.shadow {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2; */
+    /* display: none; */
+    /* background: rgba(0, 0, 0, 0.45); */
+}
+
+
+/* pagination */
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pagination-item {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    margin-right: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+
+.pagination .item-active {
+    background-color: #FF7777;
+    color: #fff;
+}
+
+.pagination .item-active .pagination-item-link {
+    color: #fff;
+}
+
+.pagination-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+}
+
+.pagination-prev,
+.pagination-next {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-prev {
+    /* margin-left: 43px; */
+}
+
+.pagination-next {
+    /* margin-right: 43px; */
+}
+
+@media(min-width: 1024px) {
+    .gallery {
+        width: calc(100%/3);
+    }
+    .gallery.one-img .image span {
+        height: 84%;
+    }
+}
+
+@media(max-width: 1023px) {
+    .gallery {
+        /* width: calc(100%/2); */
+    }
+    .gallery .image {
+        width: 50%;
+        padding: 4px;
+    }
+    .gallery .image span {
+        width: auto;
+        /* height: 169px; */
+    }
+    .gallery.three-img .image:nth-child(3) span {
+        max-height: 352px;
+        width: auto;
+    }
+    .gallery.one-img .image span {
+        height: auto;
+        width: 206%;
+    }
+    .gallery.one-img .image span img {
+        max-height: 353px;
+    }
+    .gallery.two-img .image span {
+        width: auto;
+    }
+}
+
+@media(max-width:991px) {
+    .gallery {
+        width: 50%;
+    }
+    .gallery.three-img .image:nth-child(3) span img {
+        height: 352px;
+    }
+    .gallery.one-img .image span {
+        /* width: auto; */
+        height: auto;
+    }
+    .gallery.one-img .image span img {
+        max-height: 354px;
+        /* width: 360px; */
+    }
+}
+
+@media(max-width:768px) {
+    .gallery.three-img .image:nth-child(3) span {
+        height: 352px;
+    }
+    .gallery.three-img .image:nth-child(3) span img {
+        height: 352px;
+    }
+    .gallery.one-img .image span {
+        /* height: 103%; */
+        max-width: 350px;
+    }
+    .gallery.two-img .image span {
+        max-height: 354px;
+    }
+    .gallery.one-img .image span img {
+        max-height: 352px;
+    }
+}
+
+@media(max-width:576px) {
+    .gallery {
+        width: 100%;
+    }
+    .gallery.three-img .image:nth-child(3) span img {
+        max-height: 352px;
+    }
+    .gallery.one-img .image span {
+        max-height: 358px;
+        max-width: 546px;
+    }
+    .gallery.one-img .image span img {
+        max-height: 358px;
+    }
+    .pagination-prev,
+    .pagination-next {
+        display: none;
+    }
+}
+
+@media(max-width: 354px) {
+    .pagination-item {
+        margin-right: 0;
+    }
+    .pagination {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}

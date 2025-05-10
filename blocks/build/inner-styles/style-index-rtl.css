@@ -1,0 +1,38 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/inner-styles/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-masterng-masters {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.header .main-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header .brand-title__text {
+  font-size: 1.5rem;
+  color: var(--color-pink);
+}

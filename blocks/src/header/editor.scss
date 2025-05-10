@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-masterng-masters {
+	border: 1px dotted #f00;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .main-navigation {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo-wrapper {
+        flex-shrink: 0;
+    }
+
+    .brand-title {
+        &__text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+}

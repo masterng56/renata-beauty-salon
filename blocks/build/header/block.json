@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "masterng/header-masterng",
+  "version": "0.1.0",
+  "title": "header-masterng",
+  "category": "text",
+  "icon": "smiley",
+  "description": "Хедер для сайта салона красоты",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "logoUrl": {
+      "type": "string",
+      "source": "attribute",
+      "selector": "img",
+      "attribute": "src"
+    },
+    "brandTitle": {
+      "type": "string",
+      "default": "RENATA"
+    }
+  },
+  "textdomain": "masters",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

@@ -1,0 +1,28 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "masterng/btn-appoint",
+	"version": "0.1.0",
+	"title": "Кнопка записи",
+	"category": "text",
+	"icon": "calendar-alt",
+	"description": "Кнопка для записи на прием",
+	"example": {},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Записаться",
+			"sourse": "html",
+			"selector": "a"
+		}
+	},
+	"textdomain": "masterng",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

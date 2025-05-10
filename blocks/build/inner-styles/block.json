@@ -1,0 +1,28 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "masterng/inner-styles",
+  "version": "0.1.0",
+  "title": "Внутренние стили",
+  "category": "text",
+  "icon": "calendar-alt",
+  "description": "Как использовать внутренние стили",
+  "example": {},
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "Записаться",
+      "sourse": "html",
+      "selector": "a"
+    }
+  },
+  "textdomain": "masterng",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

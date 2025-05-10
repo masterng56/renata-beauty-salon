@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "masterng/reviews-slider",
+  "version": "0.1.0",
+  "title": "Слайдер Отзывов",
+  "category": "text",
+  "icon": "calendar-alt",
+  "description": "Слайдер отзывов клиентов.",
+  "example": {},
+  "supports": {
+    "align": true
+  },
+  "attributes": {
+    "slides": {
+      "type": "array",
+      "default": [
+        {
+          "imageUrl": "",
+          "name": "Имя клиента",
+          "text": "Текст отзыва..."
+        }
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "imageUrl": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "textdomain": "masterng",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

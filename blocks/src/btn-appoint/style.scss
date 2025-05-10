@@ -1,0 +1,42 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-masterng-masters {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .main-navigation {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo-wrapper {
+        display: flex;
+				align-items: center;
+    }
+
+    .brand-title {
+        &__text {
+            font-size: 1.5rem;
+            color: var(--color-pink);
+        }
+    }
+}
